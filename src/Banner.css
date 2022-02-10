@@ -1,0 +1,49 @@
+/* https://content.r9cdn.net/rimg/dimg/93/42/2feb41a4-city-35808-17309c48297.jpg?crop=true&width=1366&height=768&xhint=2480&yhint=2396 */
+.banner {
+    
+    background: url("https://media.cntraveler.com/photos/6148a81d354d04219ad47b21/16:9/w_1280,c_limit/Vacation%20Rental%20Websites-2021_Airbnb%2032519487.jpg") center center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    /* width: auto; */
+    overflow: hidden;
+    position: relative;
+}
+
+.banner__info {
+    background-color: wheat;
+    color: black;
+    padding-top: 10vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+.banner__search {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner__searchButton {
+    background-color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    color: navy !important;
+}
+
+.banner__info > button {
+    background-color: navy;
+    color: white;
+    text-transform: inherit;
+    font-weight: 600;
+}
+
+.banner__info > h5 {
+    margin-top: 10px;
+}
+
+.banner__info > button:hover {
+    background-color: white;
+    color: navy;
+}

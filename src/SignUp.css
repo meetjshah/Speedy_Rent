@@ -1,0 +1,18 @@
+.signUp {
+    width: 100px;
+    margin-left: 150px;
+    text-align: center;
+    padding: 20;
+}
+
+.cardBody {
+    text-align: center;
+    padding: 40;
+}
+
+.signup__button {
+    width: 100;
+    margin-top: 10px;
+    margin-left: 135px;
+    text-align: center;
+}
