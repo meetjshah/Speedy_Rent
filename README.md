@@ -1,13 +1,11 @@
-# Getting Started with the app
+## A Rental and Services Application with features like Voice Recognition, Chat Bot, Chat and Messaging, Map and Multimedia, Search and Filter.
 
-In the project directory, you can run:
+### This application is a group project which is done by a team of four people during the course 'Software Engineering' within a deadline span of 10 weeks.
 
-### `npm start`
+### Tech Stack : React.js, Node.js, Express.js, MongoDB, Firebase.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Programming Languages : JavaScript, HTML/CSS, NoSQL
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Important Concepts used : React Hooks
 
 
