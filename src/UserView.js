@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from './AuthContext';
 import { Link, useHistory } from "react-router-dom";
-
-
+import "./UserView.css";
 
 function UserView() {
 
@@ -26,20 +25,28 @@ function UserView() {
 
     return (
         <>
+            
             <Card>
                 <Card.Body>
                     <h2 className='cardBody'>Profile</h2>
-                    {error && <Alert variant = "danger">{error}</Alert>}
-                    <strong>Email:</strong>{currentUser.email}
-                    <Link to = "/updateprofile" className = "btn btn-primary w-100 mt-3">
+                    <div className ="user_page_button_div">
+                        <Link className ="user_page_button" to = '/user_page'> 
+                            User Page
+                        </Link>
+                    </div>
+                    <Link className="update_profile_button" to = "/updateprofile">
                         Update Profile
                     </Link>
+                    <br/>
+                    <div className ="buttom_div">
+                        {error && <Alert variant = "danger">{error}</Alert>}
+                        <strong>Email:</strong>{currentUser.email}
+                    </div>
                 </Card.Body>
 
             </Card>
             <div className="signUp">
                 <Button variant = "link" onClick = {handleLogout}> Log Out </Button>
-                
             </div>
 
         </>

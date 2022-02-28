@@ -1,3 +1,6 @@
-/* .setting_container{
+.setting_container{
     display: flex;
-} */
+}
+.page_container{
+    display: flex;
+}

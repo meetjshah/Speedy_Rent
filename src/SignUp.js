@@ -64,9 +64,18 @@ function SignUp() {
 
     return (
         <>
+            <div className='top_div'>
+                <Link className="admin_button" to = '/alogin'>
+                    AdminPage
+                </Link>
+                <Link className ="owner_button" to = '/ologin'> 
+                    OwnerPage
+                </Link>
+                
+            </div>
             <Card>
-                <Card.Body>
-                    <h2 className='cardBody'>Sign Up</h2>
+                <Card.Body className='cardBody'>
+                    <h2 className='cardBody_title'>Sign Up</h2>
                     {error && <Alert variant = "danger">{error}</Alert>}
                     <Form onSubmit = {handleSubmit}>
                         <Form.Group id = "email">
@@ -91,13 +100,14 @@ function SignUp() {
                         </Form.Group>
 
                         <Button disabled = {loading,disabled_login} className = "signup__button" type = "submit" >Sign Up</Button>
-                        <Button className="sign-in mx-2" onClick={signInWithGoogle}>{disabled}</Button>
+                        <Button className="sign_in" onClick={signInWithGoogle}>{disabled}</Button>
                     </Form>
                 </Card.Body>
             </Card>
             <div className="signUp">
-                Already have an account? <Link to = "/login_1"> Log In </Link>
-                
+                Already have an account?
+                <br/>
+                <Link to = "/login_1"> Log In </Link>
             </div>
         </>
     )

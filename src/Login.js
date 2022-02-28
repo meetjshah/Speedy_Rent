@@ -7,6 +7,7 @@ import React, { useRef, useState } from 'react';
 import { Form, Button, Card, Alert} from 'react-bootstrap';
 import { useAuth } from './AuthContext';
 import './SignUp.css';
+import './Login.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useHistory } from "react-router-dom";
 
@@ -45,7 +46,6 @@ function Login() {
             setError("")
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
-            //history.push("/checkoutpage")
             history.push("/userview")
         } catch {
             setError('Failed to log in')
@@ -58,8 +58,8 @@ function Login() {
     return (
         <>
             <Card>
-                <Card.Body>
-                    <h2 className='cardBody'>Log In</h2>
+                <Card.Body className='cardBody'>
+                    <h2 className='cardBody_title'>User Log In</h2>
                     {error && <Alert variant = "danger">{error}</Alert>}
                     <Form onSubmit = {handleSubmit}>
                         <Form.Group id = "email">
@@ -77,10 +77,11 @@ function Login() {
                         </Form.Group>
 
                         <Button disabled = {loading,disabled_login} className = "signup__button" type = "submit" >Log In</Button>
-                        <Button className="sign-in mx-2" onClick={signInWithGoogle}>{disabled}</Button>
+                        <Button className="sign_in" onClick={signInWithGoogle}>{disabled}</Button>
+                        {/* <Link className='sign_in_with_g_button' to onClick={signInWithGoogle}> hi </Link> */}
                     </Form>
 
-                    <div className="signUp mt-3">
+                    <div className="forgotpassword">
                         <Link to = "forgotpassword">Forgot Password?</Link>
 
                     </div>

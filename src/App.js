@@ -5,7 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import SearchPage from './SearchPage';
 import LoginPage from './LoginPage';
-import { BrowserRouter as Router, Switch, Route, Redirect, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import { AuthProvider } from './AuthContext'; 
 import SignUp from './SignUp';
@@ -14,34 +14,34 @@ import UserView from './UserView';
 import PrivateRoute from './PrivateRoute';
 import ForgotPassword from './ForgotPassword';
 import UpdateProfile from './UpdateProfile';
-import GroupChat from './GroupChat';
-
+import AdminPage from './AdminPage';
+import OwnerPage from './OwnerPage';
+import UserPage from './UserPage';
+import MapApp1 from './MapApp1';
+import MapApp2 from './MapApp2';
+import MapApp3 from './MapApp3';
+import RentData from './Data.json';
 import Chatbot from "react-chatbot-kit";
 import 'react-chatbot-kit/build/main.css';
 import config from "./config"
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
 import "./Button.css";
-import Hello from './Hello';
-import Trial from './Trial';
+// import Hello from './Hello';
+// import Trial from './Trial';
+// import './GroupChat';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
-import ServiceBook from './ServiceBook';
 import Checkout from './Checkout';
 import Booked from './Booked';
+import GroupChat from './GroupChat';
+import CleanServicePage from './CleanServicePage';
 import CheckoutLogin from './CheckoutLogin';
-import MapApp1 from './MapApp1';
-import AdminPage from './AdminPage';
-import "./firebase.js"
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
-
-const auth = firebase.auth();
+import AdminLogin from './AdminLogin';
+import OwnerLogin from './OwnerLogin';
 
 function App() {
-  
+
   const [mode, setmode] = useState('none');
-  
   const toggleView = ()=>{
     if (mode === 'none') {
       setmode('fixed');
@@ -50,6 +50,7 @@ function App() {
     setmode('none');
   }
 }
+
 
 const commands = [
   {
@@ -85,7 +86,7 @@ if (redirectUrl) {
     <div className="app">
       <Router> 
       
-        <Header />
+        <Header placeholder = "Search for things to rent..." data = {RentData}/>
         <AuthProvider>
         
         
@@ -93,18 +94,14 @@ if (redirectUrl) {
           <Route exact path = "/login">
             <LoginPage/>
           </Route>
-          {/* <div className="setting_container"> */}
-            <Route path = "/admin_page">
-              <AdminPage/>
-            </Route>
-          {/* </div> */}
+
           <Route exact path = "/search">
             <SearchPage/>
           </Route>
 
           <Route exact path = "/groupchat">
             <GroupChat/>
-            </Route> 
+          </Route>
           
           <Route path = "/signup">
           
@@ -134,24 +131,26 @@ if (redirectUrl) {
 
           </Route>
 
-          <Route path = "/clogin">
+          <Route path="/clogin">
             <CheckoutLogin/>
-            </Route>
-
-          <Route path = "/map">
-            <MapApp1/>
-            </Route>
-
+          </Route>
 
           <PrivateRoute exact path = "/userview" component = {UserView}/>
           <PrivateRoute path = "/updateprofile" component = {UpdateProfile}/>
           <PrivateRoute path = "/checkoutpage" component = {Checkout}/>
-          <PrivateRoute path = "/cleaningservice" component = {ServiceBook}/>
-          <PrivateRoute path = "/booked" component = {Booked}/>
-
+          {/* <PrivateRoute path = "/booked" component = {Booked}/> */}
           <Route path = "/forgotpassword" component = {ForgotPassword} />
 
+          <Route path = "/cleaning_service">
+            <CleanServicePage/>
+          </Route>
 
+          <Route path = "/booked">
+            <Booked/>
+          </Route>
+
+          
+          
 
 
           {/* Better to have the default page at the bottom, if the switch does
@@ -161,15 +160,41 @@ if (redirectUrl) {
             <Home />
            
           </Route>
+
+          <Route path= '/map_app1'>
+              <MapApp1/>
+            </Route>
+            <Route path= "/map_app2">
+              <MapApp2/>
+            </Route>
+            <Route path= "/map_app3">
+              <MapApp3/>
+            </Route>
          
-          <Route exact path = "/hello">
+          {/* <Route exact path = "/hello">
             <Hello />
           </Route>
 
           <Route exact path = "/trial">
             <Trial />
+          </Route> */}
+         <Route path="/alogin">
+            <AdminLogin/>
           </Route>
-         
+
+          <Route path="/ologin">
+            <OwnerLogin/>
+          </Route>
+          <div className="setting_container">
+          <PrivateRoute exact path = "/admin_page" component = {AdminPage}/>
+
+          <PrivateRoute path = "/owner_page" component = {OwnerPage}/>
+    
+            <Route path = "/user_page">
+              <UserPage/>
+            </Route>
+          </div>
+            
       
         
         </Switch>
@@ -178,8 +203,10 @@ if (redirectUrl) {
         <Footer />
         {redirect}   
       </Router>
-      <button type="button" class= "button" style={{maxWidth:"300px", position:"fixed",bottom:20, right:100}} onClick={toggleView}>Chat</button>
-            <div style={{maxWidth:"500px", position:"fixed",bottom:80, right:10,display:`${mode === 'none' ? 'block' : 'none'}` }}>
+      <button type="button" class= "button" style={{maxWidth:"300px", position:"fixed",bottom:20, right:20}} onClick={toggleView}>
+        Chat
+      </button>
+            <div style={{maxWidth:"500px", position:"fixed",bottom:80, right:23,display:`${mode === 'none' ? 'block' : 'none'}` }}>
               <Chatbot
                 config={config}
                  messageParser={MessageParser}
@@ -187,20 +214,8 @@ if (redirectUrl) {
               />
             </div>
       
-      <p id="transcript">Transcript : {transcript}</p>
+      {/* <p id="transcript">Transcript : {transcript}</p> */}
       
-      {/* Home */}
-
-          {/* Header */}
-
-          {/* Banner */}
-            {/* Search */}
-
-          {/* Cards */}
-
-          {/* Footer */}
-
-      {/* Search Page */}
     </div>
   );
 }

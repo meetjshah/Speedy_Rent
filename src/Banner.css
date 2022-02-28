@@ -1,22 +1,25 @@
 /* https://content.r9cdn.net/rimg/dimg/93/42/2feb41a4-city-35808-17309c48297.jpg?crop=true&width=1366&height=768&xhint=2480&yhint=2396 */
 .banner {
-    
-    background: url("https://media.cntraveler.com/photos/6148a81d354d04219ad47b21/16:9/w_1280,c_limit/Vacation%20Rental%20Websites-2021_Airbnb%2032519487.jpg") center center;
-    background-repeat: no-repeat;
+    /* https://media.cntraveler.com/photos/6148a81d354d04219ad47b21/16:9/w_1280,c_limit/Vacation%20Rental%20Websites-2021_Airbnb%2032519487.jpg */
+    background: url("https://media.cntraveler.com/photos/6148a81d354d04219ad47b21/16:9/w_1280,c_limit/Vacation%20Rental%20Websites-2021_Airbnb%2032519487.jpg") center;
+    background-repeat: repeat-x;
+    background-size: 60%;
     height: 50vh;
+    width: 100vw;
     /* width: auto; */
     overflow: hidden;
     position: relative;
 }
 
 .banner__info {
-    background-color: wheat;
+    background-color: rgba(245, 222, 179, 0.787);
     color: black;
-    padding-top: 10vh;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    width: 300px;
+    padding-top: 20vh;
+    padding-left: 25px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    width: 20vw;
+    border-bottom-right-radius: 39px;
 }
 
 .banner__search {
@@ -26,24 +29,28 @@
 
 
 .banner__searchButton {
-    background-color: white !important;
-    font-weight: 900 !important;
+    background-color: rgb(55, 151, 158) !important;
+    font-weight: 700 !important;
     text-transform: inherit !important;
     color: navy !important;
 }
 
 .banner__info > button {
-    background-color: navy;
+    background-color: #0c4e74;
     color: white;
     text-transform: inherit;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+    height:36px;
+    margin-top: 20px;
 }
 
 .banner__info > h5 {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .banner__info > button:hover {
-    background-color: white;
-    color: navy;
+    background-color: #1484c5;
+
 }

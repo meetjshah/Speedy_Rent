@@ -33,7 +33,12 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('1', 'House', '700', '625 E Keeop St', '3b2b with 1 parking'),
+  // Owner name, Own, Price/month ($), Address, Owner ID
+  createData('May Yo', 'Apartment', '900', '625 E Koop St, Bloomington, IN', 'iIZx2WzFB4X3ICd0c2PFLkz0wDQ2'),// On searchPage
+  createData('Cersei Lannister', 'House', '1300', '878 W Houd St, Bloomington, IN', 'Lp1ZsZfB9nW22dBCRTAdjTVQsOv2'),// On searchPage
+  createData('Dingle Yo', 'Apartment', '800', '786 S Naul St, Bloomington, IN', 'ed25TNAceaZd36aVTA3k0hKzuER2'),// On searchPage
+  createData('Arya Stark', 'House', '1000', '100 W Naul St, Bloomington, IN', 'GoUTxsAaSdgHzSaJOYEM91HUy8l1'),
+  createData('Daenerys Targaryen', 'House', '1200', '201 E Cat St, Bloomington, IN', 'vDWL3K29BuQeqvnMan80rU10kyo1'),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -71,19 +76,19 @@ const headCells = [
     id: 'name',
     numeric: false,
     disablePadding: true,
-    label: 'Item ID',
+    label: 'Owner name',
   },
   {
     id: 'calories',
     numeric: true,
     disablePadding: false,
-    label: 'Type',
+    label: 'Own',
   },
   {
     id: 'fat',
     numeric: true,
     disablePadding: false,
-    label: 'Price/Month ($)',
+    label: 'Price/month ($)',
   },
   {
     id: 'carbs',
@@ -95,7 +100,7 @@ const headCells = [
     id: 'protein',
     numeric: true,
     disablePadding: false,
-    label: 'Info',
+    label: 'Owner ID',
   },
 ];
 

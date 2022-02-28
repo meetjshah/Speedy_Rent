@@ -1,0 +1,60 @@
+.user_page_button_div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.user_page_button{
+    background-color: rgb(91, 167, 253);
+    color: white;
+    margin: 9px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-decoration: none;
+    font-size: 20px;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(99, 167, 245);
+    border-radius: 10px;
+    margin-left: 48%;
+}
+
+.user_page_button:hover{
+    background-color: rgb(57, 116, 243);
+    color: white;
+    text-decoration: none;
+}
+
+.update_profile_button{
+    background-color: rgb(91, 167, 253);
+    color: white;
+    margin: 9px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-decoration: none;
+    font-size: 20px;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(99, 167, 245);
+    border-radius: 10px;
+    margin-left: 47.2%;
+}
+
+.update_profile_button:hover{
+    background-color: rgb(57, 116, 243);
+    color: white;
+    text-decoration: none;
+}
+
+.buttom_div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 47%;
+}
+
+.signUp{
+    margin-left: 48.3%;
+}

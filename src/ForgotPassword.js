@@ -50,7 +50,7 @@ function ForgotPassword() {
                     </Form>
 
                     <div className="signUp mt-3">
-                        <Link to = "/login_1">Log In</Link>
+                        <Link to = "/login_1">Back to Log In</Link>
 
                     </div>
 

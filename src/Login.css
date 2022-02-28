@@ -1,5 +1,11 @@
-.forgotPassword {
+.forgotpassword{
+    padding-top: 10px;
+    margin-left: 100px;
+}
+
+.sign_in{
+    width: 100;
     margin-top: 10px;
-    text-align: center; 
-    margin-right: 25px;
+    margin-left: 83px;
+    text-align: center;
 }

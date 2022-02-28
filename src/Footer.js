@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import SpeechRecognition from 'react-speech-recognition';
+
 function Footer() {
     return (
         <div className = 'footer'>

@@ -6,9 +6,11 @@
 
 .text{
     padding-left: 10px;
+    margin-left: 39vw;
     padding-bottom: 10px;
     font-size: 23px;
     text-align: center;
+    color: black;
 }
 
 .finish_button{

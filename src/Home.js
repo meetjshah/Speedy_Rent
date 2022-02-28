@@ -17,13 +17,18 @@ function Home() {
                         description = "Comfortable private places, with room for friends or family."/>
                 </Link>
 
-                <Link to = '/ServiceBook' style={{ textDecoration: 'none', color: 'black'}}> 
+                <Link to = '/cleaning_service' style={{ textDecoration: 'none', color: 'black'}}> 
                     <Card src = "https://nextdaycleaning.com/wp-content/uploads/2019/10/carpet-cleaning-hero-imageres2-1024x805.jpg"
                         title = "Cleaning services"
                         description = "Our state-of-the-art equipment, high-quality cleaning products and attention to detail will help your business look good and extend the life of your hardwood, tile and carpet for years."/>
                 </Link>
             </div>
-
+            <div className='home_about_section'>
+                <p className='home_about_section_text'>
+                    <h2> About us </h2>
+                    <h8> This is a rental web site which allows you to rent home from here or rent your home to others. </h8>
+                </p>
+            </div>
         </div>
     )
 }

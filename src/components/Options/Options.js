@@ -4,15 +4,6 @@ import "./Options.css";
 
 const Options = (props) => {
   const options = [
-    // {
-    //   text: "Cars",
-    //   handler: props.actionProvider.handleCars,
-    //   id: 1,
-    // },
-    // { 
-    //   text: "Boat", 
-    //   handler: props.actionProvider.handleBoat, 
-    //   id: 2 },
     { 
       text: "Apartments", 
       handler: props.actionProvider.handleApartments, 

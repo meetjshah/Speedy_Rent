@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Form, Button, Card, Alert} from 'react-bootstrap';
 import { useAuth } from './AuthContext';
-import './SignUp.css';
-import './Login.css';
+import './CheckoutLogin.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useHistory } from "react-router-dom";
 
@@ -32,10 +31,10 @@ function CheckoutLogin() {
 
 
     return (
-        <>
+        <div className='all_div'>
             <Card>
-                <Card.Body>
-                    <h2 className='cardBody'>Log In</h2>
+                <Card.Body className='cardBody'>
+                    <h2 className='cardBody_title'>Log In</h2>
                     {error && <Alert variant = "danger">{error}</Alert>}
                     <Form onSubmit = {handleSubmit}>
                         <Form.Group id = "email">
@@ -63,10 +62,11 @@ function CheckoutLogin() {
                 </Card.Body>
             </Card>
             <div className="signUp">
-                Need an account? <Link to = "/signup">Sign Up</Link>
-                
+                Need an account? 
+                <br/>
+                <Link to = "/signup">Sign Up</Link>
             </div>
-        </>
+        </div>
     )
 }
 

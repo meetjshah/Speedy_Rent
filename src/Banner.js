@@ -11,7 +11,7 @@ function Banner() {
 
     return (
         <div className='banner'>
-            <div className='banner__search'>
+            {/* <div className='banner__search'>
                 {showSearch && <Search />}
 
                 <Button onClick = {() => setShowSearch(!showSearch)}
@@ -19,14 +19,13 @@ function Banner() {
                 variant='outlined'>
                     {showSearch ? "Hide" : "Search Dates"}
                 </Button>
-            </div>
+            </div> */}
             <div className='banner__info'>
                 <h1>
                     Rent whatever you like!
                 </h1>
                 <h5>
-                    Want to rent a spaceship? 
-                    We provide those too!
+                    Click here to explore what's nearby :)
                 </h5>
                 <Button onClick={() => history.push('/search')}
                 variant = 'outlined'>

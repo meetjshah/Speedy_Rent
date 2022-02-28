@@ -15,7 +15,7 @@ function SearchResult({
     total,
 }) {
     return (
-        <Link to="/clogin" style={{ textDecoration: 'none', color: 'black'}}>
+        <Link to="/login_1" style={{ textDecoration: 'none', color: 'black'}}>
         <div className='searchResult'>
             <img src={img} alt="" />
             <FavoriteBorderIcon
@@ -38,12 +38,13 @@ function SearchResult({
                             <strong>{star}</strong>
                         </p>
                     </div>
-                    <Link to = '/map'>
-                    Show on map
-                </Link>
             </div>
             </div>
+            <Link to = '/map'>
+                Show on map
+        </Link>
         </div>
+
         </Link>
     )
 }

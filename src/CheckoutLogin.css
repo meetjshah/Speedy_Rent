@@ -1,0 +1,94 @@
+.top_div{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.signUp {
+    width: 100px;
+    margin-left: 150px;
+    text-align: center;
+    padding: 20;
+}
+
+.cardBody_title {
+    text-align: center;
+    padding: 40;
+}
+
+.cardBody{
+    background-color: rgb(212, 255, 241);
+    margin: 20px;
+}
+
+.signup__button {
+    width: 100;
+    margin-top: 10px;
+    margin-left: 135px;
+    text-align: center;
+}
+
+.admin_button{
+    background-color: rgb(91, 167, 253);
+    color: white;
+    margin: 9px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-decoration: none;
+    font-size: 20px;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(99, 167, 245);
+    border-radius: 10px;
+    margin-left: 15%;
+}
+
+.admin_button:hover{
+    background-color: rgb(57, 116, 243);
+    color: white;
+    text-decoration: none;
+}
+
+.owner_button{
+    background-color: rgb(91, 167, 253);
+    color: white;
+    margin: 9px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-decoration: none;
+    font-size: 20px;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(99, 167, 245);
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.owner_button:hover{
+    background-color: rgb(57, 116, 243);
+    color: white;
+    text-decoration: none;
+}
+
+.forgotpassword{
+    padding-top: 10px;
+    margin-left: 100px;
+}
+
+.sign_in{
+    width: 100;
+    margin-top: 10px;
+    margin-left: 83px;
+    text-align: center;
+}
+
+.all_div{
+    background-color: #fff;
+    width: 25vw;
+    margin-left: 30vw;
+}

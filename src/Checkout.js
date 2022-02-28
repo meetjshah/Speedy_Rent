@@ -34,11 +34,11 @@ class Checkout extends React.Component {
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                   <div>
                     <h6 class="my-0">Product name</h6>
-                    <small class="text-muted">Apartment booking</small>
+                    <small class="text-muted">Brief description</small>
                   </div>
                   <span class="text-muted">$12</span>
                 </li>
-                {/* <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
                   <div>
                     <h6 class="my-0">Second product</h6>
                     <small class="text-muted">Brief description</small>
@@ -51,28 +51,28 @@ class Checkout extends React.Component {
                     <small class="text-muted">Brief description</small>
                   </div>
                   <span class="text-muted">$5</span>
-                </li> */}
+                </li>
                 <li class="list-group-item d-flex justify-content-between bg-light">
                   <div class="text-success">
-                    <h6 class="my-0">Taxes</h6>
-                    <small>7%</small>
+                    <h6 class="my-0">Promo code</h6>
+                    <small>EXAMPLECODE</small>
                   </div>
-                  <span class="text-success">0.84$</span>
+                  <span class="text-success">-$5</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
                   <span>Total (USD)</span>
-                  <strong>$12.84</strong>
+                  <strong>$20</strong>
                 </li>
               </ul>
 
-              {/* <form class="card p-2">
+              <form class="card p-2">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Promo code"/>
                   <div class="input-group-append">
                     <button type="button" class="btn btn-secondary">Redeem</button>
                   </div>
                 </div>
-              </form> */}
+              </form>
             </div>
             <div class="col-md-8 order-md-1">
               <h4 class="mb-3">Billing address</h4>
@@ -94,7 +94,7 @@ class Checkout extends React.Component {
                   </div>
                 </div>
 
-                {/* <div class="mb-3">
+                <div class="mb-3">
                   <label for="username">Username</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -105,7 +105,7 @@ class Checkout extends React.Component {
                       Your username is required.
                     </div>
                   </div>
-                </div> */}
+                </div>
 
                 <div class="mb-3">
                   <label for="email">Email <span class="text-muted">(Optional)</span></label>
@@ -178,15 +178,15 @@ class Checkout extends React.Component {
                     </div>
                   </div>
                 </div>
-                {/* <hr class="mb-4" /> */}
-                {/* <div class="custom-control custom-checkbox">
+                <hr class="mb-4" />
+                <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="same-address" />
                   <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="save-info" />
                   <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                </div> */}
+                </div>
                 <hr class="mb-4" />
 
                 <h4 class="mb-3">Payment</h4>
@@ -200,10 +200,10 @@ class Checkout extends React.Component {
                     <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required />
                     <label class="custom-control-label" for="debit">Debit card</label>
                   </div>
-                  {/* <div class="custom-control custom-radio">
+                  <div class="custom-control custom-radio">
                     <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required />
                     <label class="custom-control-label" for="paypal">Paypal</label>
-                  </div> */}
+                  </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6 mb-3">

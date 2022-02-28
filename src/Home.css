@@ -1,5 +1,17 @@
 .home__section {
     display: flex;
-    padding: 30px;
+    padding: 15px;
+    background-color: rgb(237, 238, 225);
 }
 
+.home_about_section{
+    padding: 5px;
+    padding-bottom: 30px;
+    height: 150px;
+    background-color: rgb(37, 64, 116);
+    color: rgb(255, 255, 255);
+}
+
+.home_about_section_text{
+    margin-left: 40vw;
+}
