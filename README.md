@@ -1,11 +1,13 @@
 ## A Rental and Services Application with features like Voice Recognition, Chat Bot, Chat and Messaging, Map and Multimedia, Search and Filter.
 
-### This application is a group project which is done by a team of four people during the course 'Software Engineering' within a deadline span of 10 weeks.
+### Deployment Link : https://speedy-rent-login-development.web.app
 
-### Tech Stack : React.js, Node.js, Express.js, MongoDB, Firebase.
+#### This application is a group project which is done by a team of four people during the course 'Software Engineering' within a deadline span of 10 weeks.
 
-### Programming Languages : JavaScript, HTML/CSS, NoSQL
+#### Tech Stack : React.js, Node.js, Express.js, MongoDB, Firebase.
 
-### Important Concepts used : React Hooks
+#### Programming Languages : JavaScript, HTML/CSS, NoSQL
+
+#### Important Concepts used : React Hooks
 
 
